@@ -3,5 +3,5 @@ const text = document.getElementById("text");
 const delay = document.getElementById("delay");
 const output = document.getElementById("output");
 async function display() {
-	output.innerText = await setTimeout(() => text.value, delay.value);
+	output.innerText = await setTimeout(() => { return text.value}, delay.value);
 }
